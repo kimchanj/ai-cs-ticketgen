@@ -8,3 +8,10 @@
 __pycache__/
 *.py[cod]
 
+
+# --- local/IDE artifacts ---
+.idea/
+__pycache__/
+*.py[cod]
+.venv/
+venv/

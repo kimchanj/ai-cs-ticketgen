@@ -1,0 +1,16 @@
+[project]
+name = "ai-cs-ticketgen"
+version = "0.1.0"
+description = "CS 문의를 개발 착수 티켓(JSON/Markdown)으로 구조화하는 Streamlit MVP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit>=1.30",
+  "python-dotenv>=1.0",
+  "openai>=1.0",
+]
+
+[tool.setuptools]
+# 패키징까지 고려하지 않는다면 없어도 되지만, 향후 확장 대비
+# (controllers/domain/services/renderers 를 패키지로 인식시키는 목적)
+packages = ["controllers", "domain", "services", "renderers"]
